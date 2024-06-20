@@ -1,5 +1,5 @@
 # ReactionImgMLLM
-This is the offical code of following paper "ReactionImgMLLM: A Multimodal Large Language Model for Reaction Image Data Extraction".
+This is the offical code of following paper "ReactionImgMLLM: A Multimodal Large Language Model for Image-Based Reaction Data Extraction".
 
 ## Highlights
 <p align="justify">
