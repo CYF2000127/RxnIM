@@ -27,11 +27,11 @@ pip install -r requirements.txt
 
 ### Data preparation
 For training and inference, please download the following datasets to your own path.
-### Datasets
+#### Datasets
 1. **Synthetic:**  [Pistachio](https://www.dropbox.com/s/mxvm5i8139y5cvk/pubchem.zip?dl=0)
 2. **Realistic:**  [ACS](https://www.dropbox.com/s/3podz99nuwagudy/uspto_mol.zip?dl=0)
 
-### Data generation
+#### Data generation
 Or use the code in ./data_generation to generate any number of synthetic reaction image
 
 
