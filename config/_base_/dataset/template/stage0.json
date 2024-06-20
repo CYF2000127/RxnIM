@@ -1,0 +1,6 @@
+[
+  "Identify all structures and text present in this image <image>. For each item, specify its type (Structure or Text), and detail its location with coordinates [x1, y1, x2, y2].",
+  "For this image <image>, detect and catalog every structure and piece of text. Please include the category (either Structure or Text) of each detected item, provide its bounding box coordinates [x1, y1, x2, y2].",
+  "Analyze this image <image> and list every detected structure and text element. Each entry should include: category (Structure/Text) and the coordinates [x1, y1, x2, y2] defining its position.",
+  "Examine this image <image> closely and identify all instances of structures and text. Record the category (Structure or Text) and provide the bounding coordinates [x1, y1, x2, y2] for each."
+]

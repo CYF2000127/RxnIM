@@ -1,0 +1,3 @@
+[
+  "Please list every reaction[Rxn] in this image <image> in detail, including the category of every objects with a unique ID and coordinates[x1,y1,x2,y2]. And their Reaction role in a reaction. The category include [Str] and [Txt], Each object is represented by [Obj]=[Txt][x1,y1,x2,y2] or [Str][x1,y1,x2,y2]. The Reaction role include [Rct], [Cnd] and [Prd]. And notice that Reactants and Products are usually linked by arrows.The output format of each reaction should be: [Obj]1[Obj]2...[Rct][Obj]3...[Cnd][Obj]4...[Prd][Rxn], only the [Cnd] can be missed"
+]
