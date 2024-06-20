@@ -53,7 +53,9 @@ sh eval.sh
 
 ### Demo
 Run the following command to launch a Gradio web demo:
+```
 python mllm/demo/webdemo_re.py --model_path /path/to/shikra/ckpt
+```
 
 More model checkpoints is coming soon! 
 
