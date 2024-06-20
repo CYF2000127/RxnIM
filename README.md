@@ -32,8 +32,8 @@ For training and inference, please download the following datasets to your own p
 2. **Realistic:**  [ACS](https://www.dropbox.com/s/3podz99nuwagudy/uspto_mol.zip?dl=0)
 
 #### Data generation
-Or use the code in [`data_generation`](./data_generation) to generate any number of synthetic reaction images.
-Note that you should download the original Pistachio dataset first.
+Or use the codes in [`data_generation`](./data_generation) to generate any number of synthetic reaction images.
+Note that you should download the original Pistachio dataset first and put it into the same file with the codes.
 
 
 
