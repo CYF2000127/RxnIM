@@ -38,7 +38,7 @@ Or use the code in ./data_generation to generate any number of synthetic reactio
 
 
 ### Training
-1. Change the name of datasets in [`DEFAULT_TRAIN_DATASET.py`](./config/_base_/dataset/DEFAULT_TRAIN_DATASET.py) for different training stage.
+1. Change the name of datasets in [`DEFAULT_TRAIN_DATASET.py`](./config/_base_/dataset/DEFAULT_TRAIN_DATASET.py) for different training stages.
 2. Run the following command:
 ```
 sh train.sh
@@ -50,5 +50,13 @@ Run the following command:
 ```
 sh eval.sh
 ```
+
+### Demo
+Run the following command to launch a Gradio web demo:
+python mllm/demo/webdemo_re.py --model_path /path/to/shikra/ckpt
+
+More model checkpoints is coming soon! 
+
+
 ### Acknowledgement
 Our code is based on [Shikra](https://github.com/shikras/shikra) and [VisionLLM](https://github.com/OpenGVLab/VisionLLM), thanks their great jobs!
