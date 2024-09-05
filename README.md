@@ -7,7 +7,7 @@ In this paper, we present ReactionImgMLLM, a multimodal large language model for
 The experiments also show the outstanding condition OCR and role identification abilities.
   
 [comment]: <> ()
-![visualization](figure/model.png)
+![visualization](figure/reactionllm.jpg)
 <div align="center">
 Overall Architecture of our ReactionImgMLLM.
 </div> 
