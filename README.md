@@ -69,7 +69,6 @@ Go to our [RxnIM.Web demo](https://huggingface.co/spaces/CYF200127/RxnIM) to dir
 
 The input is a chemical reaction image 
 ![visualization](examples/1.png)
-<div align="center",width="50">
 Example input chemical reaction image.
 
 The output includes the SMILES of reactants and products, and the detailed condition roles:
