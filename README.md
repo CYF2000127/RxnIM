@@ -18,12 +18,21 @@ Please clone the following repositories:
 git clone https://github.com/CYF2000127/RxnIM
 ```
 
+
+
+
 ## Experiments
 
 ### Requirement
+
+1. First create and activate a [conda](https://numdifftools.readthedocs.io/en/stable/how-to/create_virtual_env_with_conda.html) environment with the following command in a Linux, Windows, or MacOS environment (Linux is the most recommended):
+```
+conda create -n rxnim python=3.10
+conda activate rxnim
+
+2. Then Install requirements:
 ```
 pip install -r requirements.txt
-```
 
 ### Data preparation
 For training and inference, please download the following datasets to your own path.
@@ -37,8 +46,9 @@ Note that you should download the original Pistachio dataset first and put it in
 
 
 ### Training
-1. Change the name of datasets in [`DEFAULT_TRAIN_DATASET.py`](./config/_base_/dataset/DEFAULT_TRAIN_DATASET.py) for different training stages.
-2. Run the following command:
+1. Change the dataset path and jasonl file path in [`DEFAULT_TRAIN_DATASET.py`](./config/_base_/dataset/DEFAULT_TRAIN_DATASET.py) for different training stages.
+2. Change the parameters in [`shikra_fsdp.py`](config/_base_/train/shikra_fsdp.py) for different training stages according to the paper.
+3. Run the following command:
 ```
 sh train.sh
 ```
