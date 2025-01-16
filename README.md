@@ -1,4 +1,4 @@
-# RxnIM[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14673458.svg)](https://doi.org/10.5281/zenodo.14673458)
+# RxnIM [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14673458.svg)](https://doi.org/10.5281/zenodo.14673458)
 This is the offical code of following paper "Towards Large-scale Chemical Reaction Image Parsing via a Multimodal Large Language Model".
 
 ## Highlights
