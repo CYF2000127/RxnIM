@@ -1,5 +1,5 @@
 # RxnIM
-This is the offical code of following paper "RxnIM: A Multimodal Large Language Model for Image-Based Reaction Data Extraction".
+This is the offical code of following paper "Towards Large-scale Chemical Reaction Image Parsing via a Multimodal Large Language Model".
 
 ## Highlights
 <p align="justify">
@@ -36,8 +36,6 @@ Or use the codes in [`data_generation`](./data_generation) to generate any numbe
 Note that you should download the original Pistachio dataset first and put it into the same file with the codes.
 
 
-
-
 ### Training
 1. Change the name of datasets in [`DEFAULT_TRAIN_DATASET.py`](./config/_base_/dataset/DEFAULT_TRAIN_DATASET.py) for different training stages.
 2. Run the following command:
@@ -52,13 +50,11 @@ Run the following command:
 sh eval.sh
 ```
 
-### Demo
-Run the following command to launch a Gradio web demo:
-```
-python mllm/demo/webdemo_re.py --model_path /path/to/shikra/ckpt
-```
+### Web Demo
 
-More model checkpoints is coming soon! 
+Go to our [web demo](https://huggingface.co/spaces/CYF200127/RxnIM) to directly use our model!
+
+ 
 
 
 ### Acknowledgement
