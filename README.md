@@ -101,9 +101,17 @@ Products: Br.N[C@@H]1C[C@@H](CO)[C@@H](O)C1
 Full Reaction: Br.N[C@@H]1C[C@@H](CO)[C@@H](O)[C@@H]1Br>>Br.N[C@@H]1C[C@@H](CO)[C@@H](O)C1 | DIPEA[reagent], Pd/C, H2[reagent], IPA/MeOH[solvent], 80% over two steps[yield] 
 ```
 
+We also provide the source json file output and using Rdkit to visualize the reaction diagram for better inference and usage:
+
+![visualization](examples/02.png)
+<div align="center",width="50">
+Rdkit reaction diagram output
+</div> 
+
+
 
 ## Visualization
-We also provide the source json file output and using Rdkit to visualize the reaction diagram for better inference and usage:
+We also show some qualitative results of our method below
 
 ![visualization](examples/02.png)
 <div align="center",width="50">
