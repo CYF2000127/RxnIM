@@ -103,8 +103,12 @@ Full Reaction: Br.N[C@@H]1C[C@@H](CO)[C@@H](O)[C@@H]1Br>>Br.N[C@@H]1C[C@@H](CO)[
 
 
 ## Visualization
-We also show some qualitative results of our method below:
+We also provide the source json file output and using Rdkit to visualize the reaction diagram for better inference and usage:
 
+![visualization](examples/02.png)
+<div align="center",width="50">
+Rdkit reaction diagram output
+</div> 
 
 
 
