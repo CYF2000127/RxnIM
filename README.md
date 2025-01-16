@@ -36,14 +36,17 @@ pip install -r requirements.txt
 
 ### Data preparation
 For training and inference, please download the following datasets to your own path.
+
 #### Datasets
-1. **Synthetic:**  [Pistachio](https://www.dropbox.com/s/mxvm5i8139y5cvk/pubchem.zip?dl=0)
-2. **Realistic:**  [ACS](https://www.dropbox.com/s/3podz99nuwagudy/uspto_mol.zip?dl=0)
+1. **Synthetic:**  [Pistachio](https://huggingface.co/datasets/CYF200127/RxnIM/blob/main/reaction_images.zip)
+2. **Real:**  [ACS](https://huggingface.co/datasets/CYF200127/RxnIM/blob/main/reaction_images.zip)
 
 #### Data generation
 Or use the codes in [`data_generation`](./data_generation) to generate any number of synthetic reaction images.
 Note that you should download the original Pistachio dataset first and put it into the same file with the codes.
 
+#### Model
+3. Download the model checkpoint from our [Hugging Face Repo](https://huggingface.co/datasets/CYF200127/RxnIM/blob/main/RxnIM-7b.zip) and put in your own path 
 
 ### Training
 1. Change the dataset path and jasonl file path in [`DEFAULT_TRAIN_DATASET.py`](./config/_base_/dataset/DEFAULT_TRAIN_DATASET.py) for different training stages.
@@ -53,16 +56,56 @@ Note that you should download the original Pistachio dataset first and put it in
 sh train.sh
 ```
  
-
 ### Inference
 Run the following command:
 ```
 sh eval.sh
 ```
 
-### Web Demo
 
-Go to our [web demo](https://huggingface.co/spaces/CYF200127/RxnIM) to directly use our model!
+## Prediction using RxnIM.Web
+
+Go to our [RxnIM.Web demo](https://huggingface.co/spaces/CYF200127/RxnIM) to directly use our tool!
+
+The input is a chemical reaction image 
+![visualization](examples/1.png)
+<div align="center",width="50">
+Example input chemical reaction image.
+
+The output includes the SMILES of reactants and products, and the detailed condition roles:
+
+``` 
+Reaction: 1
+Reactants: CC(C)(C)OC(=O)N[C@H]1C=C[C@H](C(=O)O)C1
+Conditions: Br2, Pyridine[reagent], DME/H2O[solvent], 0-5°C[temperature], 68%[yield]
+Products: CC(C)(C)OC(=O)N[C@@H]1C[C@H]2C(=O)O[C@H]2[C@@H]1Br
+Full Reaction: CC(C)(C)OC(=O)N[C@H]1C=C[C@H](C(=O)O)C1>>CC(C)(C)OC(=O)N[C@@H]1C[C@H]2C(=O)O[C@H]2[C@@H]1Br | Br2, Pyridine[reagent], DME/H2O[solvent], 0-5°C[temperature], 68%[yield]
+
+Reaction: 2
+Reactants: CC(C)(C)OC(=O)N[C@@H]1C[C@H]2C(=O)O[C@H]2[C@@H]1Br
+Conditions: LiBH4[reagent], THF/H2O[solvent], -5°C[temperature], 90%[yield]
+Products: CC(C)(C)OC(=O)N[C@@H]1C[C@@H](CO)[C@@H](O)[C@@H]1Br
+Full Reaction: CC(C)(C)OC(=O)N[C@@H]1C[C@H]2C(=O)O[C@H]2[C@@H]1Br>>CC(C)(C)OC(=O)N[C@@H]1C[C@@H](CO)[C@@H](O)[C@@H]1Br | LiBH4[reagent], THF/H2O[solvent], -5°C[temperature], 90%[yield]
+
+Reaction: 3
+Reactants: CC(C)(C)OC(=O)N[C@@H]1C[C@@H](CO)[C@@H](O)[C@@H]1Br
+Conditions: 48% aq. HBr[reagent], IPA[solvent], 55°C[temperature]
+Products: Br.N[C@@H]1C[C@@H](CO)[C@@H](O)[C@@H]1Br
+Full Reaction: CC(C)(C)OC(=O)N[C@@H]1C[C@@H](CO)[C@@H](O)[C@@H]1Br>>Br.N[C@@H]1C[C@@H](CO)[C@@H](O)[C@@H]1Br | 48% aq. HBr[reagent], IPA[solvent], 55°C[temperature]
+
+Reaction: 4
+Reactants: Br.N[C@@H]1C[C@@H](CO)[C@@H](O)[C@@H]1Br
+Conditions: DIPEA[reagent], Pd/C, H2[reagent], IPA/MeOH[solvent], 80% over two steps[yield]
+Products: Br.N[C@@H]1C[C@@H](CO)[C@@H](O)C1
+Full Reaction: Br.N[C@@H]1C[C@@H](CO)[C@@H](O)[C@@H]1Br>>Br.N[C@@H]1C[C@@H](CO)[C@@H](O)C1 | DIPEA[reagent], Pd/C, H2[reagent], IPA/MeOH[solvent], 80% over two steps[yield] 
+```
+
+
+## Visualization
+We also show some qualitative results of our method below:
+
+
+
 
  
 
