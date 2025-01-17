@@ -113,12 +113,16 @@ Rdkit reaction diagram output
 ## Visualization
 We also show some qualitative results of our method below
 
-![visualization](examples/02.png)
-<div align="center",width="50">
-Rdkit reaction diagram output
+![visualization](examples/03.png)
+<div align="center">
+Overall Architecture of our RxnIM.
 </div> 
 
 
+![visualization](examples/04.png)
+<div align="center">
+Overall Architecture of our RxnIM.
+</div> 
 
  
 
