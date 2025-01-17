@@ -115,13 +115,13 @@ We also show some qualitative results of our method below
 
 ![visualization](examples/03.png)
 <div align="center">
-Overall Architecture of our RxnIM.
+visualization examples of the model’s prediction on the reaction component identification task.
 </div> 
 
 
 ![visualization](examples/04.png)
 <div align="center">
-Overall Architecture of our RxnIM.
+Visualization examples of the model’s prediction on the reaction condition interpretation task.
 </div> 
 
  
