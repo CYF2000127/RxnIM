@@ -67,7 +67,7 @@ sh eval.sh
 
 Go to our [RxnIM.Web demo](https://huggingface.co/spaces/CYF200127/RxnIM) to directly use our tool!
 
-The input is a chemical reaction image 
+The input is a chemical reaction image: 
 ![visualization](examples/1.png)
 <div align="center",width="50">
 Example input chemical reaction image.
