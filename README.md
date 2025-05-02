@@ -1,7 +1,7 @@
 # RxnIM [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14673458.svg)](https://doi.org/10.5281/zenodo.14673458)
 This is the offical code of following paper "Towards Large-scale Chemical Reaction Image Parsing via a Multimodal Large Language Model".
 
-## Highlights
+## :sparkles: Highlights
 <p align="justify">
 In this paper, we present RxnIM, a multimodal large language model for different reaction image data extraction tasks such as reaction extraction task, condition OCR and role identification task. We first formulate these tasks into different task instructions. The model then aligns the task instructions with features extracted from reaction images. An LLM-based decoder can further make predictions based on these instructions. For the reaction extraction task, our model can achieve over 84%-92% soft match F1 score on multiple test sets, which significantly outperforms the previous works. 
 The experiments also show the outstanding condition OCR and role identification abilities.
@@ -12,7 +12,7 @@ The experiments also show the outstanding condition OCR and role identification 
 Overall Architecture of our RxnIM.
 </div> 
 
-## Using the code
+## :rocket: Using the code
 Please clone the following repositories:
 ```
 git clone https://github.com/CYF2000127/RxnIM
@@ -21,7 +21,7 @@ git clone https://github.com/CYF2000127/RxnIM
 
 
 
-## Experiments
+## :fire: Experiments
 
 ### Requirement
 
@@ -63,7 +63,7 @@ sh eval.sh
 ```
 
 
-## Prediction using RxnIM.Web
+## 🤗 Reaction image parsing using RxnIM.Web
 
 Go to our [RxnIM.Web demo](https://huggingface.co/spaces/CYF200127/RxnIM) to directly use our tool!
 
@@ -110,7 +110,7 @@ Rdkit reaction diagram output
 
 
 
-## Visualization
+## :mag: Visualization
 We also show some qualitative results of our method below
 
 ![visualization](examples/03.png)
@@ -127,5 +127,5 @@ Visualization examples of the model’s prediction on the reaction condition int
  
 
 
-### Acknowledgement
+## :warning: Acknowledgement
 Our code is based on [Shikra](https://github.com/shikras/shikra) and [VisionLLM](https://github.com/OpenGVLab/VisionLLM), thanks their great jobs!
