@@ -63,7 +63,7 @@ sh eval.sh
 ```
 
 
-## 🤗 Reaction image parsing using RxnIM.Web
+## 🤗 Reaction image parsing using [RxnIM.Web](https://huggingface.co/spaces/CYF200127/RxnIM) 
 
 Go to our [RxnIM.Web demo](https://huggingface.co/spaces/CYF200127/RxnIM) to directly use our tool!
 
