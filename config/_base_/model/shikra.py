@@ -6,7 +6,7 @@ model_args = dict(
     cache_dir=None,
     model_name_or_path=None,
     #vision_tower=r'openai/clip-vit-large-patch14',
-    vision_tower='./ddetr'
+    vision_tower='./ddetr',
     pretrain_mm_mlp_adapter=None,
 
     # model config
