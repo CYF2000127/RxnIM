@@ -12,7 +12,7 @@ The experiments also show the outstanding condition OCR and role identification 
 Overall Architecture of our RxnIM.
 </div> 
 
-:sparkles: :sparkles: Please check out our newest work on versatile and multimodal information extraction from the chemical literature using a multi-agent system named ChemEAGLE: [paper](https://arxiv.org/abs/2507.20230), [code](https://github.com/CYF2000127/ChemEagle)!
+:sparkles::sparkles: Please check out our newest work on versatile and multimodal information extraction from the chemical literature using a multi-agent system named ChemEAGLE: [paper](https://arxiv.org/abs/2507.20230), [code](https://github.com/CYF2000127/ChemEagle)!
 
 
 ## :rocket: Using the code
